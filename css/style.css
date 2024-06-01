@@ -1,0 +1,159 @@
+@font-face {
+  font-family: "Plus Jakarta Sans";
+  src: url(../assets/fonts/PlusJakartaSans-VariableFont_wght.ttf);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  transition: all 0.2s linear 0s;
+  font-family: "Plus Jakarta Sans", "system-ui", sans-serif;
+}
+
+:root {
+  --Red: #f65351;
+  --Blue: #0a317b;
+  --White: #ffffff;
+  --Very-light-grayish-blue: #f7fafd;
+  --Light-grayish-blue-1: #e5effa;
+  --Light-grayish-blue-2: #dde7ee;
+  --Grayish-blue: #939dae;
+  --Dark-grayish-blue: #5e6778;
+  --Very-dark-blue: #1c202b;
+}
+
+body {
+  display: grid;
+  place-items: center;
+  background-color: var(--Light-grayish-blue-2);
+}
+
+.container {
+  margin: 20px 0;
+  width: 100%;
+  max-width: 1000px;
+  background-color: var(--White);
+  padding: 20px 15px;
+  border-radius: 10px;
+}
+
+/* Navbar */
+.container .navbar {
+  display: flex;
+  justify-content: space-between;
+}
+
+.container .navbar h2 {
+  font-size: 24px;
+}
+
+.container .navbar h2 span {
+  background-color: var(--Blue);
+  color: var(--White);
+  padding: 0 10px;
+  border-radius: 5px;
+  font-size: 20px;
+  margin-left: 5px;
+}
+
+.container .navbar .nav-btn {
+  border: none;
+  background-color: inherit;
+  color: var(--Dark-grayish-blue);
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.container .navbar .nav-btn:hover {
+  color: var(--Blue);
+}
+
+/* Notifications */
+.notifications {
+  margin-top: 50px;
+}
+
+.notifications .notificate {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.notifications .new {
+  background-color: var(--Very-light-grayish-blue);
+}
+
+.notifications .notificate figure img {
+  width: 50px;
+  margin-right: 10px;
+}
+
+.notifications .notificate .content {
+  width: calc(100% - 60px);
+}
+
+.notifications .notificate .content p {
+  line-height: 25px;
+}
+
+.notifications .notificate .content .time {
+  color: var(--Grayish-blue);
+}
+
+.notifications .notificate .content .message {
+  border: 1px solid var(--Grayish-blue);
+  border-radius: 5px;
+  padding: 15px;
+  margin-top: 5px;
+  line-height: 22px;
+}
+
+.notifications .notificate .content .message:hover {
+  background-color: var(--Light-grayish-blue-1);
+}
+
+.notifications .notificate .content p span {
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  background-color: var(--Red);
+  display: inline-block;
+  margin-left: 5px;
+}
+
+.notifications .notificate .content p strong {
+  margin-right: 5px;
+  font-weight: 900;
+  color: var(--Very-dark-blue);
+}
+
+.notifications .notificate .content p strong:hover {
+  color: var(--Blue);
+}
+
+.notifications .notificate .content p b {
+  margin-left: 5px;
+  color: var(--Dark-grayish-blue);
+}
+
+.notifications .new .content p b,
+.notifications .notificate .content p b:hover {
+  color: var(--Blue);
+}
+
+@media (min-width: 450px) {
+  .container {
+    padding: 25px;
+  }
+}
+
+@media (min-width: 800px) {
+  .notifications .notificate .content {
+    width: calc(100% - 70px);
+  }
+}
