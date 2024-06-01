@@ -26,8 +26,8 @@ This is a solution to the [Notifications page challenge on Frontend Mentor](http
 
 ## Links
 
-- Solution URL: [Solution](https://your-solution-url.com)
-- Live Site URL: [Demo](https://your-live-site-url.com)
+- Solution URL: [Solution](https://www.frontendmentor.io/solutions/notifications-page-LZVATBKkxT)
+- Live Site URL: [Demo](https://basemsameh.github.io/notifications-page/)
 
 ## Technologies Used
 

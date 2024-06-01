@@ -24,13 +24,13 @@
 }
 
 body {
+  height: 100vh;
   display: grid;
   place-items: center;
-  background-color: var(--Light-grayish-blue-2);
+  background-color: var(--Very-light-grayish-blue);
 }
 
 .container {
-  margin: 20px 0;
   width: 100%;
   max-width: 1000px;
   background-color: var(--White);
